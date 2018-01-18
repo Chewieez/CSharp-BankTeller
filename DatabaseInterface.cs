@@ -32,18 +32,6 @@ namespace BankTeller
             }
         }
 
-        public void Delete(string command)
-        {
-            using (_connection)
-            {
-                _connection.Open ();
-                SqliteCommand dbcmd = _connection.CreateCommand ();
-                dbcmd.CommandText = command;
-                dbcmd.ExecuteNonQuery ();
-                dbcmd.Dispose ();
-            }
-        }
-
         public void Update(string command)
         {
             using (_connection)
