@@ -11,7 +11,7 @@ namespace BankTeller
         public DatabaseInterface()
         {
             // Replace {you} with the correct value
-            _connectionString = $"Data Source=/Users/Greg/workspace/csharp/exercises/csharp-bankteller-boilerplate/bankteller.db";
+            _connectionString = $"Data Source=/Users/Greg/workspace/csharp/exercises/csharp-bankteller/bankteller.db";
             _connection = new SqliteConnection(_connectionString);
         }
 
